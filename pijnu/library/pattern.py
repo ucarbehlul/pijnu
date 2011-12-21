@@ -1140,7 +1140,8 @@ class Klass(Pattern):
             self.charset = toCharset(format)
             expression = "[%s]" % format
         else:                           # from text grammar
-            self.charset = format
+            # Ensure charset is a byte string to avoid UnicodeDecodeErrors
+            self.charset = ''.join(chr(ord(c)) for c in format)
         # We need a clean text for format (see method _cleanRepr)
         expression = Klass._cleanRepr(expression)
         # define common attributes
@@ -1158,7 +1159,7 @@ class Klass(Pattern):
         # This way, Unicode characters, previously treated as bytes,
         # will pass; this is just a basic hack; a whole class allowing
         # ranges of characters would be far better.
-        if char in self.charset or ord(char) > 255:
+        if ord(char) > 255 or chr(ord(char)) in self.charset:
             return Node(self, char, pos, pos+1, source)
         # case failure
         return MatchFailure(self, source, pos)
@@ -1243,7 +1244,7 @@ class String(Pattern):
             stopPos = len(source)
         # looping
         charset = self.charset
-        while (pos < stopPos) and (source[pos] in charset):
+        while (pos < stopPos) and (ord(source[pos]) <= 255) and (chr(ord(source[pos])) in charset):
             pos += 1
         # result value:
         chars = source[startPos:pos]

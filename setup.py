@@ -35,13 +35,8 @@ long_description = """\
 'pijnu' is intended to be clear, easy, practical.
 """
 
-# version code should be overloaded by makeRelease
-version = 20110610
-if version is None:
-    version = str(date.today()).replace("-", "")  # eg "20090831"
-
 setup(name="pijnu",
-      version=version,
+      version="20111221",
       author="Denis Derman",
       author_email="denis.spir@gmail.com",
       maintainer="Peter Potrowl",

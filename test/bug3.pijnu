@@ -1,7 +1,7 @@
 # a mini test grammar for the generator
 
-# © 2009 Denis Derman (former developer)
-# © 2011 Peter Potrowl (current developer)
+# Copyright 2009 Denis Derman <denis.spir@gmail.com> (former developer)
+# Copyright 2011-2012 Peter Potrowl <peter017@gmail.com> (current developer)
 
 test_custom_toolset_numbers_transform
 <toolset>

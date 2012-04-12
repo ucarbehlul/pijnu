@@ -1,9 +1,30 @@
-# coding:utf8
+# -*- coding: utf8 -*-
 
-'''		p i j n u   p a r s e r   m a t c h   a c t i o n s
+'''
+Copyright 2009 Denis Derman <denis.spir@gmail.com> (former developer)
+Copyright 2011-2012 Peter Potrowl <peter017@gmail.com> (current developer)
 
-	A set of match actions to change node values.
-	Used by pijnu's meta parser to write user parser code.
+This file is part of Pijnu.
+
+Pijnu is free software: you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License as published
+by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Pijnu is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public
+License along with Pijnu.  If not, see <http://www.gnu.org/licenses/>.
+'''
+
+'''
+Pijnu parser match actions
+
+A set of match actions to change node values.
+Used by pijnu's meta parser to write user parser code.
 '''
 
 

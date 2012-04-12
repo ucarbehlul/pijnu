@@ -1,24 +1,23 @@
 # -*- coding: utf8 -*-
 
 '''
-© 2009 Denis Derman (former developer) <denis.spir@gmail.com>
-© 2011 Peter Potrowl (current developer) <peter017@gmail.com>
+Copyright 2009 Denis Derman <denis.spir@gmail.com> (former developer)
+Copyright 2011-2012 Peter Potrowl <peter017@gmail.com> (current developer)
 
-This file is part of PIJNU.
+This file is part of Pijnu.
 
-PIJNU is free software: you can redistribute it and/or modify it
-under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
+Pijnu is free software: you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License as published
+by the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
-PIJNU is distributed in the hope that it will be useful,
+Pijnu is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+GNU Lesser General Public License for more details.
 
-You should have received a copy of the GNU General Public License
-along with PIJNU: see the file called 'GPL'.
-If not, see <http://www.gnu.org/licenses/>.
+You should have received a copy of the GNU Lesser General Public
+License along with Pijnu.  If not, see <http://www.gnu.org/licenses/>.
 '''
 
 """ testValid
@@ -29,7 +28,6 @@ letter	: [a..z]	: noX
 text	: letter{4..6}
 
 """
-
 
 
 from pijnu.library import *

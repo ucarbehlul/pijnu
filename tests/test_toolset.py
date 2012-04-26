@@ -1,4 +1,4 @@
-from pijnu.tests import ParserTestCase
+from tests import ParserTestCase
 from pijnu import makeParser
 
 

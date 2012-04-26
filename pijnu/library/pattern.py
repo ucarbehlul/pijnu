@@ -444,7 +444,7 @@ class Pattern(object):
         else:
             print "test_suite_dict = {"
             for (source, result) in d.items():
-                print "    \"%s\": \"%r\"" % (source, result.value)
+                print "    \"%s\": \"%r\"" % (source, result)
             print "}"
         return d
 

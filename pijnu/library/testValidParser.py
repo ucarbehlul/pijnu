@@ -46,9 +46,9 @@ def noX(node):
 		raise Invalidation(message, pattern=pattern, source=source,pos=pos)
 
 ###   <definition>
-x = Word('x', format='"x"')(noX)
-letter = Klass(format='[a..z]', charset='abcdefghijklmnopqrstuvwxyz')(noX)
-text = Repetition(letter, numMin=4,numMax=6, format='letter{4..6}')
+x = Word('x', expression='"x"')(noX)
+letter = Klass(format='[a..z]', expression='abcdefghijklmnopqrstuvwxyz')(noX)
+text = Repetition(letter, numMin=4,numMax=6, expression='letter{4..6}')
 
 
 

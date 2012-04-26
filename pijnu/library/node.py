@@ -572,6 +572,8 @@ def join(node):
     '''
     if node.kind is Node.LEAF:
         return
+    if isinstance(node.value, str):
+        return
     toLeaves(node)
     childTexts = []
     for child in node.value:

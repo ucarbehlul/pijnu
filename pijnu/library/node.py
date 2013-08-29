@@ -314,7 +314,7 @@ class Node(object):
                     value += "%s" % (child.leaves())
                 else:
                     value += "%s" % child
-        return u"%s" % (value)
+        return "%s" % (value)
 
 ################## match actions ####################
 ### debug

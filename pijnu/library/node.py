@@ -260,7 +260,7 @@ class Node(object):
     def __repr__(self):
         ''' output format "type:value"
         '''
-        return "%s:%s" % (self.tag, repr(self.value))
+        return "%s:%s" % (self.tag, str(self.value))
 
     def __str__(self):
         ''' output format "type:value", or whole information, or treeView(),
